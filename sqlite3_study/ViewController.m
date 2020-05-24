@@ -48,7 +48,7 @@ static sqlite3 *db = nil;
     db = [self openSqlDataBase];
     
     //sql语句
-    const char *changeSql = "update t_students set age = 'wdw' where name = '王小二-30'";
+    const char *changeSql = "update t_students set name = 'wdw' where name = '王二小-30'";
     char *errMsg = NULL;
     int updateResult = sqlite3_exec(db, changeSql, NULL, NULL, &errMsg);
 
